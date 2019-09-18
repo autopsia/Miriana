@@ -1,0 +1,6 @@
+framework module Pods_Miriana {
+  umbrella header "Pods-Miriana-umbrella.h"
+
+  export *
+  module * { export * }
+}
