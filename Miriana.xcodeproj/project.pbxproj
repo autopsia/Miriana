@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB6B0F702332A362005B3292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F6F2332A362005B3292 /* AppDelegate.swift */; };
+		FB6B0F722332A362005B3292 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F712332A362005B3292 /* ViewController.swift */; };
+		FB6B0F752332A362005B3292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6B0F732332A362005B3292 /* Main.storyboard */; };
+		FB6B0F782332A362005B3292 /* Miriana.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F762332A362005B3292 /* Miriana.xcdatamodeld */; };
+		FB6B0F7A2332A364005B3292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB6B0F792332A364005B3292 /* Assets.xcassets */; };
+		FB6B0F7D2332A364005B3292 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6B0F7B2332A364005B3292 /* LaunchScreen.storyboard */; };
+		FB6B0FA12332A3BC005B3292 /* CSMTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F852332A3BC005B3292 /* CSMTextView.swift */; };
+		FB6B0FA22332A3BC005B3292 /* CSMLocalAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F862332A3BC005B3292 /* CSMLocalAuthentication.swift */; };
+		FB6B0FA32332A3BC005B3292 /* CSMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F872332A3BC005B3292 /* CSMLabel.swift */; };
+		FB6B0FA42332A3BC005B3292 /* CSMDateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F882332A3BC005B3292 /* CSMDateManager.swift */; };
+		FB6B0FA52332A3BC005B3292 /* CSMCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F892332A3BC005B3292 /* CSMCrypto.swift */; };
+		FB6B0FA62332A3BC005B3292 /* CSMColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F8A2332A3BC005B3292 /* CSMColorManager.swift */; };
+		FB6B0FA72332A3BC005B3292 /* CSMNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F8B2332A3BC005B3292 /* CSMNumber.swift */; };
+		FB6B0FA82332A3BC005B3292 /* CSMKeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F8C2332A3BC005B3292 /* CSMKeyChain.swift */; };
+		FB6B0FA92332A3BC005B3292 /* CSMLocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F8D2332A3BC005B3292 /* CSMLocalNotificationManager.swift */; };
+		FB6B0FAA2332A3BC005B3292 /* CSMSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F8E2332A3BC005B3292 /* CSMSearchBar.swift */; };
+		FB6B0FAB2332A3BC005B3292 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = FB6B0F8F2332A3BC005B3292 /* .gitkeep */; };
+		FB6B0FAC2332A3BC005B3292 /* CSMCustomStarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F902332A3BC005B3292 /* CSMCustomStarsView.swift */; };
+		FB6B0FAD2332A3BC005B3292 /* CSMImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F912332A3BC005B3292 /* CSMImage.swift */; };
+		FB6B0FAE2332A3BC005B3292 /* CSMJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F922332A3BC005B3292 /* CSMJSON.swift */; };
+		FB6B0FAF2332A3BC005B3292 /* CSMAutomaticStatusBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F932332A3BC005B3292 /* CSMAutomaticStatusBarColor.swift */; };
+		FB6B0FB02332A3BC005B3292 /* CSMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F942332A3BC005B3292 /* CSMTextField.swift */; };
+		FB6B0FB12332A3BC005B3292 /* CSMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F952332A3BC005B3292 /* CSMButton.swift */; };
+		FB6B0FB22332A3BC005B3292 /* CSMTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F962332A3BC005B3292 /* CSMTableView.swift */; };
+		FB6B0FB32332A3BC005B3292 /* CSMCustomCollectionViewVerticalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F972332A3BC005B3292 /* CSMCustomCollectionViewVerticalLayout.swift */; };
+		FB6B0FB42332A3BC005B3292 /* CSMImageDownloaded.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F982332A3BC005B3292 /* CSMImageDownloaded.swift */; };
+		FB6B0FB52332A3BC005B3292 /* CSMSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F992332A3BC005B3292 /* CSMSwitch.swift */; };
+		FB6B0FB62332A3BC005B3292 /* CSMLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F9A2332A3BC005B3292 /* CSMLocationManager.swift */; };
+		FB6B0FB72332A3BC005B3292 /* CSMUserAlters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F9B2332A3BC005B3292 /* CSMUserAlters.swift */; };
+		FB6B0FB82332A3BC005B3292 /* CSMWebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F9C2332A3BC005B3292 /* CSMWebServiceManager.swift */; };
+		FB6B0FB92332A3BC005B3292 /* CSMSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F9D2332A3BC005B3292 /* CSMSlider.swift */; };
+		FB6B0FBA2332A3BC005B3292 /* CSMImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F9E2332A3BC005B3292 /* CSMImageView.swift */; };
+		FB6B0FBB2332A3BC005B3292 /* CSMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F9F2332A3BC005B3292 /* CSMView.swift */; };
+		FB6B0FBC2332A3BC005B3292 /* CSMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0FA02332A3BC005B3292 /* CSMString.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB6B0F6C2332A362005B3292 /* Miriana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miriana.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB6B0F6F2332A362005B3292 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB6B0F712332A362005B3292 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB6B0F742332A362005B3292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB6B0F772332A362005B3292 /* Miriana.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Miriana.xcdatamodel; sourceTree = "<group>"; };
+		FB6B0F792332A364005B3292 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB6B0F7C2332A364005B3292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB6B0F7E2332A364005B3292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB6B0F852332A3BC005B3292 /* CSMTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMTextView.swift; sourceTree = "<group>"; };
+		FB6B0F862332A3BC005B3292 /* CSMLocalAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMLocalAuthentication.swift; sourceTree = "<group>"; };
+		FB6B0F872332A3BC005B3292 /* CSMLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMLabel.swift; sourceTree = "<group>"; };
+		FB6B0F882332A3BC005B3292 /* CSMDateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMDateManager.swift; sourceTree = "<group>"; };
+		FB6B0F892332A3BC005B3292 /* CSMCrypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMCrypto.swift; sourceTree = "<group>"; };
+		FB6B0F8A2332A3BC005B3292 /* CSMColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMColorManager.swift; sourceTree = "<group>"; };
+		FB6B0F8B2332A3BC005B3292 /* CSMNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMNumber.swift; sourceTree = "<group>"; };
+		FB6B0F8C2332A3BC005B3292 /* CSMKeyChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMKeyChain.swift; sourceTree = "<group>"; };
+		FB6B0F8D2332A3BC005B3292 /* CSMLocalNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMLocalNotificationManager.swift; sourceTree = "<group>"; };
+		FB6B0F8E2332A3BC005B3292 /* CSMSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMSearchBar.swift; sourceTree = "<group>"; };
+		FB6B0F8F2332A3BC005B3292 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		FB6B0F902332A3BC005B3292 /* CSMCustomStarsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMCustomStarsView.swift; sourceTree = "<group>"; };
+		FB6B0F912332A3BC005B3292 /* CSMImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMImage.swift; sourceTree = "<group>"; };
+		FB6B0F922332A3BC005B3292 /* CSMJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMJSON.swift; sourceTree = "<group>"; };
+		FB6B0F932332A3BC005B3292 /* CSMAutomaticStatusBarColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMAutomaticStatusBarColor.swift; sourceTree = "<group>"; };
+		FB6B0F942332A3BC005B3292 /* CSMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMTextField.swift; sourceTree = "<group>"; };
+		FB6B0F952332A3BC005B3292 /* CSMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMButton.swift; sourceTree = "<group>"; };
+		FB6B0F962332A3BC005B3292 /* CSMTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMTableView.swift; sourceTree = "<group>"; };
+		FB6B0F972332A3BC005B3292 /* CSMCustomCollectionViewVerticalLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMCustomCollectionViewVerticalLayout.swift; sourceTree = "<group>"; };
+		FB6B0F982332A3BC005B3292 /* CSMImageDownloaded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMImageDownloaded.swift; sourceTree = "<group>"; };
+		FB6B0F992332A3BC005B3292 /* CSMSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMSwitch.swift; sourceTree = "<group>"; };
+		FB6B0F9A2332A3BC005B3292 /* CSMLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMLocationManager.swift; sourceTree = "<group>"; };
+		FB6B0F9B2332A3BC005B3292 /* CSMUserAlters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMUserAlters.swift; sourceTree = "<group>"; };
+		FB6B0F9C2332A3BC005B3292 /* CSMWebServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMWebServiceManager.swift; sourceTree = "<group>"; };
+		FB6B0F9D2332A3BC005B3292 /* CSMSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMSlider.swift; sourceTree = "<group>"; };
+		FB6B0F9E2332A3BC005B3292 /* CSMImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMImageView.swift; sourceTree = "<group>"; };
+		FB6B0F9F2332A3BC005B3292 /* CSMView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMView.swift; sourceTree = "<group>"; };
+		FB6B0FA02332A3BC005B3292 /* CSMString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMString.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB6B0F692332A362005B3292 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB6B0F632332A362005B3292 = {
+			isa = PBXGroup;
+			children = (
+				FB6B0F6E2332A362005B3292 /* Miriana */,
+				FB6B0F6D2332A362005B3292 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB6B0F6D2332A362005B3292 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB6B0F6C2332A362005B3292 /* Miriana.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB6B0F6E2332A362005B3292 /* Miriana */ = {
+			isa = PBXGroup;
+			children = (
+				FB6B0F842332A3BC005B3292 /* CoreISIL */,
+				FB6B0F6F2332A362005B3292 /* AppDelegate.swift */,
+				FB6B0F712332A362005B3292 /* ViewController.swift */,
+				FB6B0F732332A362005B3292 /* Main.storyboard */,
+				FB6B0F792332A364005B3292 /* Assets.xcassets */,
+				FB6B0F7B2332A364005B3292 /* LaunchScreen.storyboard */,
+				FB6B0F7E2332A364005B3292 /* Info.plist */,
+				FB6B0F762332A362005B3292 /* Miriana.xcdatamodeld */,
+			);
+			path = Miriana;
+			sourceTree = "<group>";
+		};
+		FB6B0F842332A3BC005B3292 /* CoreISIL */ = {
+			isa = PBXGroup;
+			children = (
+				FB6B0F852332A3BC005B3292 /* CSMTextView.swift */,
+				FB6B0F862332A3BC005B3292 /* CSMLocalAuthentication.swift */,
+				FB6B0F872332A3BC005B3292 /* CSMLabel.swift */,
+				FB6B0F882332A3BC005B3292 /* CSMDateManager.swift */,
+				FB6B0F892332A3BC005B3292 /* CSMCrypto.swift */,
+				FB6B0F8A2332A3BC005B3292 /* CSMColorManager.swift */,
+				FB6B0F8B2332A3BC005B3292 /* CSMNumber.swift */,
+				FB6B0F8C2332A3BC005B3292 /* CSMKeyChain.swift */,
+				FB6B0F8D2332A3BC005B3292 /* CSMLocalNotificationManager.swift */,
+				FB6B0F8E2332A3BC005B3292 /* CSMSearchBar.swift */,
+				FB6B0F8F2332A3BC005B3292 /* .gitkeep */,
+				FB6B0F902332A3BC005B3292 /* CSMCustomStarsView.swift */,
+				FB6B0F912332A3BC005B3292 /* CSMImage.swift */,
+				FB6B0F922332A3BC005B3292 /* CSMJSON.swift */,
+				FB6B0F932332A3BC005B3292 /* CSMAutomaticStatusBarColor.swift */,
+				FB6B0F942332A3BC005B3292 /* CSMTextField.swift */,
+				FB6B0F952332A3BC005B3292 /* CSMButton.swift */,
+				FB6B0F962332A3BC005B3292 /* CSMTableView.swift */,
+				FB6B0F972332A3BC005B3292 /* CSMCustomCollectionViewVerticalLayout.swift */,
+				FB6B0F982332A3BC005B3292 /* CSMImageDownloaded.swift */,
+				FB6B0F992332A3BC005B3292 /* CSMSwitch.swift */,
+				FB6B0F9A2332A3BC005B3292 /* CSMLocationManager.swift */,
+				FB6B0F9B2332A3BC005B3292 /* CSMUserAlters.swift */,
+				FB6B0F9C2332A3BC005B3292 /* CSMWebServiceManager.swift */,
+				FB6B0F9D2332A3BC005B3292 /* CSMSlider.swift */,
+				FB6B0F9E2332A3BC005B3292 /* CSMImageView.swift */,
+				FB6B0F9F2332A3BC005B3292 /* CSMView.swift */,
+				FB6B0FA02332A3BC005B3292 /* CSMString.swift */,
+			);
+			path = CoreISIL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB6B0F6B2332A362005B3292 /* Miriana */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB6B0F812332A364005B3292 /* Build configuration list for PBXNativeTarget "Miriana" */;
+			buildPhases = (
+				FB6B0F682332A362005B3292 /* Sources */,
+				FB6B0F692332A362005B3292 /* Frameworks */,
+				FB6B0F6A2332A362005B3292 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Miriana;
+			productName = Miriana;
+			productReference = FB6B0F6C2332A362005B3292 /* Miriana.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB6B0F642332A362005B3292 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Sector Defectuoso";
+				TargetAttributes = {
+					FB6B0F6B2332A362005B3292 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FB6B0F672332A362005B3292 /* Build configuration list for PBXProject "Miriana" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB6B0F632332A362005B3292;
+			productRefGroup = FB6B0F6D2332A362005B3292 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB6B0F6B2332A362005B3292 /* Miriana */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB6B0F6A2332A362005B3292 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB6B0F7D2332A364005B3292 /* LaunchScreen.storyboard in Resources */,
+				FB6B0F7A2332A364005B3292 /* Assets.xcassets in Resources */,
+				FB6B0F752332A362005B3292 /* Main.storyboard in Resources */,
+				FB6B0FAB2332A3BC005B3292 /* .gitkeep in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB6B0F682332A362005B3292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB6B0FA92332A3BC005B3292 /* CSMLocalNotificationManager.swift in Sources */,
+				FB6B0FA82332A3BC005B3292 /* CSMKeyChain.swift in Sources */,
+				FB6B0FBB2332A3BC005B3292 /* CSMView.swift in Sources */,
+				FB6B0FB62332A3BC005B3292 /* CSMLocationManager.swift in Sources */,
+				FB6B0FAD2332A3BC005B3292 /* CSMImage.swift in Sources */,
+				FB6B0FB22332A3BC005B3292 /* CSMTableView.swift in Sources */,
+				FB6B0FB32332A3BC005B3292 /* CSMCustomCollectionViewVerticalLayout.swift in Sources */,
+				FB6B0FA72332A3BC005B3292 /* CSMNumber.swift in Sources */,
+				FB6B0FB12332A3BC005B3292 /* CSMButton.swift in Sources */,
+				FB6B0FA62332A3BC005B3292 /* CSMColorManager.swift in Sources */,
+				FB6B0FAE2332A3BC005B3292 /* CSMJSON.swift in Sources */,
+				FB6B0F782332A362005B3292 /* Miriana.xcdatamodeld in Sources */,
+				FB6B0FB42332A3BC005B3292 /* CSMImageDownloaded.swift in Sources */,
+				FB6B0FB82332A3BC005B3292 /* CSMWebServiceManager.swift in Sources */,
+				FB6B0F722332A362005B3292 /* ViewController.swift in Sources */,
+				FB6B0FB52332A3BC005B3292 /* CSMSwitch.swift in Sources */,
+				FB6B0FB92332A3BC005B3292 /* CSMSlider.swift in Sources */,
+				FB6B0F702332A362005B3292 /* AppDelegate.swift in Sources */,
+				FB6B0FA22332A3BC005B3292 /* CSMLocalAuthentication.swift in Sources */,
+				FB6B0FA42332A3BC005B3292 /* CSMDateManager.swift in Sources */,
+				FB6B0FAC2332A3BC005B3292 /* CSMCustomStarsView.swift in Sources */,
+				FB6B0FAA2332A3BC005B3292 /* CSMSearchBar.swift in Sources */,
+				FB6B0FB02332A3BC005B3292 /* CSMTextField.swift in Sources */,
+				FB6B0FAF2332A3BC005B3292 /* CSMAutomaticStatusBarColor.swift in Sources */,
+				FB6B0FA32332A3BC005B3292 /* CSMLabel.swift in Sources */,
+				FB6B0FA52332A3BC005B3292 /* CSMCrypto.swift in Sources */,
+				FB6B0FB72332A3BC005B3292 /* CSMUserAlters.swift in Sources */,
+				FB6B0FBA2332A3BC005B3292 /* CSMImageView.swift in Sources */,
+				FB6B0FBC2332A3BC005B3292 /* CSMString.swift in Sources */,
+				FB6B0FA12332A3BC005B3292 /* CSMTextView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB6B0F732332A362005B3292 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB6B0F742332A362005B3292 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB6B0F7B2332A364005B3292 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB6B0F7C2332A364005B3292 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB6B0F7F2332A364005B3292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB6B0F802332A364005B3292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB6B0F822332A364005B3292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Miriana/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sectordefectuoso.Miriana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB6B0F832332A364005B3292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Miriana/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sectordefectuoso.Miriana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB6B0F672332A362005B3292 /* Build configuration list for PBXProject "Miriana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB6B0F7F2332A364005B3292 /* Debug */,
+				FB6B0F802332A364005B3292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB6B0F812332A364005B3292 /* Build configuration list for PBXNativeTarget "Miriana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB6B0F822332A364005B3292 /* Debug */,
+				FB6B0F832332A364005B3292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FB6B0F762332A362005B3292 /* Miriana.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FB6B0F772332A362005B3292 /* Miriana.xcdatamodel */,
+			);
+			currentVersion = FB6B0F772332A362005B3292 /* Miriana.xcdatamodel */;
+			path = Miriana.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FB6B0F642332A362005B3292 /* Project object */;
+}
