@@ -43,6 +43,7 @@
 		FB6B0FBA2332A3BC005B3292 /* CSMImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F9E2332A3BC005B3292 /* CSMImageView.swift */; };
 		FB6B0FBB2332A3BC005B3292 /* CSMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F9F2332A3BC005B3292 /* CSMView.swift */; };
 		FB6B0FBC2332A3BC005B3292 /* CSMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0FA02332A3BC005B3292 /* CSMString.swift */; };
+		FBD5C5182332EEFD00258C4E /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD5C5172332EEFD00258C4E /* Resources.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		FB6B0F9E2332A3BC005B3292 /* CSMImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMImageView.swift; sourceTree = "<group>"; };
 		FB6B0F9F2332A3BC005B3292 /* CSMView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMView.swift; sourceTree = "<group>"; };
 		FB6B0FA02332A3BC005B3292 /* CSMString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMString.swift; sourceTree = "<group>"; };
+		FBD5C5172332EEFD00258C4E /* Resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources.xcassets; sourceTree = "<group>"; };
 		FCB8C96822D256CEAA0E335F /* Pods_Miriana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Miriana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,7 +108,6 @@
 				C4319F55CEDD7AB2532EAA5D /* Pods-Miriana.debug.xcconfig */,
 				4C88468C82493886D5857843 /* Pods-Miriana.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -148,6 +149,7 @@
 				FB6B0F7B2332A364005B3292 /* LaunchScreen.storyboard */,
 				FB6B0F7E2332A364005B3292 /* Info.plist */,
 				FB6B0F762332A362005B3292 /* Miriana.xcdatamodeld */,
+				FBD5C5172332EEFD00258C4E /* Resources.xcassets */,
 			);
 			path = Miriana;
 			sourceTree = "<group>";
@@ -250,6 +252,7 @@
 				FB6B0F7D2332A364005B3292 /* LaunchScreen.storyboard in Resources */,
 				FB6B0F7A2332A364005B3292 /* Assets.xcassets in Resources */,
 				FB2C95212332E9AE00D5B993 /* GoogleService-Info.plist in Resources */,
+				FBD5C5182332EEFD00258C4E /* Resources.xcassets in Resources */,
 				FB6B0F752332A362005B3292 /* Main.storyboard in Resources */,
 				FB6B0FAB2332A3BC005B3292 /* .gitkeep in Resources */,
 			);
