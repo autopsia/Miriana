@@ -11,6 +11,7 @@
 		FB02E3AA23341A2000E31664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB02E3A923341A2000E31664 /* Main.storyboard */; };
 		FB02E3AE23341E9800E31664 /* AllPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02E3AD23341E9800E31664 /* AllPostsViewController.swift */; };
 		FB02E3B023341EAD00E31664 /* FriendPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02E3AF23341EAD00E31664 /* FriendPostsViewController.swift */; };
+		FB02E3B22334388800E31664 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02E3B12334388800E31664 /* MainTableViewCell.swift */; };
 		FB2C95212332E9AE00D5B993 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB2C95202332E9AE00D5B993 /* GoogleService-Info.plist */; };
 		FB6B0F702332A362005B3292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F6F2332A362005B3292 /* AppDelegate.swift */; };
 		FB6B0F722332A362005B3292 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F712332A362005B3292 /* ViewController.swift */; };
@@ -54,6 +55,7 @@
 		FB02E3A923341A2000E31664 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FB02E3AD23341E9800E31664 /* AllPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPostsViewController.swift; sourceTree = "<group>"; };
 		FB02E3AF23341EAD00E31664 /* FriendPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPostsViewController.swift; sourceTree = "<group>"; };
+		FB02E3B12334388800E31664 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		FB2C95202332E9AE00D5B993 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FB6B0F6C2332A362005B3292 /* Miriana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miriana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6B0F6F2332A362005B3292 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,19 +125,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FB02E3AB23341A9A00E31664 /* storyboards */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = storyboards;
-			sourceTree = "<group>";
-		};
 		FB02E3AC23341B0100E31664 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				FB02E3A923341A2000E31664 /* Main.storyboard */,
 				FB02E3AD23341E9800E31664 /* AllPostsViewController.swift */,
 				FB02E3AF23341EAD00E31664 /* FriendPostsViewController.swift */,
+				FB02E3B12334388800E31664 /* MainTableViewCell.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -162,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				FB02E3AC23341B0100E31664 /* Main */,
-				FB02E3AB23341A9A00E31664 /* storyboards */,
 				FB2C95202332E9AE00D5B993 /* GoogleService-Info.plist */,
 				FB6B0F842332A3BC005B3292 /* CoreISIL */,
 				FB6B0F6F2332A362005B3292 /* AppDelegate.swift */,
@@ -351,6 +346,7 @@
 				FB6B0F702332A362005B3292 /* AppDelegate.swift in Sources */,
 				FB6B0FA22332A3BC005B3292 /* CSMLocalAuthentication.swift in Sources */,
 				FB6B0FA42332A3BC005B3292 /* CSMDateManager.swift in Sources */,
+				FB02E3B22334388800E31664 /* MainTableViewCell.swift in Sources */,
 				FB6B0FAC2332A3BC005B3292 /* CSMCustomStarsView.swift in Sources */,
 				FB6B0FAA2332A3BC005B3292 /* CSMSearchBar.swift in Sources */,
 				FB6B0FB02332A3BC005B3292 /* CSMTextField.swift in Sources */,
