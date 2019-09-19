@@ -14,7 +14,7 @@
 		FB2C95212332E9AE00D5B993 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB2C95202332E9AE00D5B993 /* GoogleService-Info.plist */; };
 		FB6B0F702332A362005B3292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F6F2332A362005B3292 /* AppDelegate.swift */; };
 		FB6B0F722332A362005B3292 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F712332A362005B3292 /* ViewController.swift */; };
-		FB6B0F752332A362005B3292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6B0F732332A362005B3292 /* Main.storyboard */; };
+		FB6B0F752332A362005B3292 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6B0F732332A362005B3292 /* Login.storyboard */; };
 		FB6B0F782332A362005B3292 /* Miriana.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F762332A362005B3292 /* Miriana.xcdatamodeld */; };
 		FB6B0F7A2332A364005B3292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB6B0F792332A364005B3292 /* Assets.xcassets */; };
 		FB6B0F7D2332A364005B3292 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6B0F7B2332A364005B3292 /* LaunchScreen.storyboard */; };
@@ -58,7 +58,7 @@
 		FB6B0F6C2332A362005B3292 /* Miriana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miriana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6B0F6F2332A362005B3292 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB6B0F712332A362005B3292 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FB6B0F742332A362005B3292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB6B0F742332A362005B3292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		FB6B0F772332A362005B3292 /* Miriana.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Miriana.xcdatamodel; sourceTree = "<group>"; };
 		FB6B0F792332A364005B3292 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB6B0F7C2332A364005B3292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -161,8 +161,7 @@
 		FB6B0F6E2332A362005B3292 /* Miriana */ = {
 			isa = PBXGroup;
 			children = (
-				FB02E3AC23341B0100E31664 /* Main */,
-				FB02E3AB23341A9A00E31664 /* storyboards */,
+				FBE6DCFB23343530006D6C5C /* Login */,
 				FB2C95202332E9AE00D5B993 /* GoogleService-Info.plist */,
 				FB6B0F842332A3BC005B3292 /* CoreISIL */,
 				FB6B0F6F2332A362005B3292 /* AppDelegate.swift */,
@@ -209,6 +208,15 @@
 				FB6B0FA02332A3BC005B3292 /* CSMString.swift */,
 			);
 			path = CoreISIL;
+			sourceTree = "<group>";
+		};
+		FBE6DCFB23343530006D6C5C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FB6B0F712332A362005B3292 /* ViewController.swift */,
+				FB6B0F732332A362005B3292 /* Login.storyboard */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,8 +282,8 @@
 				FB6B0F7D2332A364005B3292 /* LaunchScreen.storyboard in Resources */,
 				FB6B0F7A2332A364005B3292 /* Assets.xcassets in Resources */,
 				FB2C95212332E9AE00D5B993 /* GoogleService-Info.plist in Resources */,
-				FB6B0F752332A362005B3292 /* Main.storyboard in Resources */,
-				FB02E3AA23341A2000E31664 /* Main.storyboard in Resources */,
+				FBD5C5182332EEFD00258C4E /* Resources.xcassets in Resources */,
+				FB6B0F752332A362005B3292 /* Login.storyboard in Resources */,
 				FB6B0FAB2332A3BC005B3292 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,12 +375,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FB6B0F732332A362005B3292 /* Main.storyboard */ = {
+		FB6B0F732332A362005B3292 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FB6B0F742332A362005B3292 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		FB6B0F7B2332A364005B3292 /* LaunchScreen.storyboard */ = {
