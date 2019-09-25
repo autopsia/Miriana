@@ -32,6 +32,9 @@ class LoginViewController: UIViewController {
                     for document in querySnapshot!.documents {
                         
                     }
+                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "UITabBarController") as! UITabBarController
+                    self.present(newViewController, animated: true, completion: nil)
                 }
         }
     }
