@@ -16,6 +16,7 @@
 		FB02E3B023341EAD00E31664 /* FriendPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02E3AF23341EAD00E31664 /* FriendPostsViewController.swift */; };
 		FB02E3B22334388800E31664 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02E3B12334388800E31664 /* MainTableViewCell.swift */; };
 		FB2C95212332E9AE00D5B993 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB2C95202332E9AE00D5B993 /* GoogleService-Info.plist */; };
+		FB334D9A233BEC29006998F2 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB334D99233BEC29006998F2 /* AddPostViewController.swift */; };
 		FB6B0F702332A362005B3292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F6F2332A362005B3292 /* AppDelegate.swift */; };
 		FB6B0F752332A362005B3292 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6B0F732332A362005B3292 /* Login.storyboard */; };
 		FB6B0F782332A362005B3292 /* Miriana.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F762332A362005B3292 /* Miriana.xcdatamodeld */; };
@@ -62,6 +63,7 @@
 		FB02E3AF23341EAD00E31664 /* FriendPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPostsViewController.swift; sourceTree = "<group>"; };
 		FB02E3B12334388800E31664 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		FB2C95202332E9AE00D5B993 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB334D99233BEC29006998F2 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		FB6B0F6C2332A362005B3292 /* Miriana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miriana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6B0F6F2332A362005B3292 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB6B0F742332A362005B3292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				FB02E3AD23341E9800E31664 /* AllPostsViewController.swift */,
 				FB02E3AF23341EAD00E31664 /* FriendPostsViewController.swift */,
 				FB02E3B12334388800E31664 /* MainTableViewCell.swift */,
+				FB334D99233BEC29006998F2 /* AddPostViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			files = (
 				FB6B0FA92332A3BC005B3292 /* CSMLocalNotificationManager.swift in Sources */,
 				FB6B0FA82332A3BC005B3292 /* CSMKeyChain.swift in Sources */,
+				FB334D9A233BEC29006998F2 /* AddPostViewController.swift in Sources */,
 				FB6B0FBB2332A3BC005B3292 /* CSMView.swift in Sources */,
 				FB6B0FB62332A3BC005B3292 /* CSMLocationManager.swift in Sources */,
 				FB6B0FAD2332A3BC005B3292 /* CSMImage.swift in Sources */,
