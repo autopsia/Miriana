@@ -10,16 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Inicio Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Miriana" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="InicioController" customModule="Miriana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_principal" translatesAutoresizingMaskIntoConstraints="NO" id="n1N-7l-GmX">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCq-Kl-Hxy" customClass="CSMButton" customModule="Miriana" customModuleProvider="target">
                                 <rect key="frame" x="55" y="497" width="210" height="45"/>
@@ -77,31 +77,33 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="zfG-9f-cNo"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="zfG-9f-cNo">
+                        <barButtonItem key="backBarButtonItem" title="Atras" id="cHr-gY-yrE"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1128.75" y="129.92957746478874"/>
         </scene>
-        <!--View Controller-->
+        <!--Login-->
         <scene sceneID="SQM-KX-hQ2">
             <objects>
-                <viewController id="QVC-I2-UA8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Register" id="QVC-I2-UA8" customClass="LoginViewController" customModule="Miriana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="33I-um-fp3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P9f-9M-4Xy">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="399-0j-u59">
-                                        <rect key="frame" x="31" y="179" width="258" height="190"/>
+                                        <rect key="frame" x="20" y="132" width="280" height="240"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese su usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TN2-wv-gMN" customClass="CSMTextField" customModule="Miriana" customModuleProvider="target">
-                                                <rect key="frame" x="14" y="12" width="230" height="30"/>
+                                                <rect key="frame" x="16" y="12" width="248" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" textContentType="username"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="leftMargin">
                                                         <real key="value" value="8"/>
@@ -109,18 +111,24 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese su contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Brq-9e-6Nh" customClass="CSMTextField" customModule="Miriana" customModuleProvider="target">
-                                                <rect key="frame" x="14" y="67" width="230" height="30"/>
+                                                <rect key="frame" x="16" y="62" width="248" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="leftMargin">
                                                         <real key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Olvidaste tu contraseña?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haf-jJ-x0V" customClass="CSMLabel" customModule="Miriana" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="112" width="193.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                <color key="textColor" red="1" green="0.97969253431468273" blue="0.98191663638147419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHf-UP-w8a" customClass="CSMButton" customModule="Miriana" customModuleProvider="target">
-                                                <rect key="frame" x="45" y="134" width="168" height="33"/>
+                                                <rect key="frame" x="40" y="174" width="200" height="33"/>
                                                 <color key="backgroundColor" red="0.25203318460000002" green="1" blue="0.75392599240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="Ingresar">
@@ -134,28 +142,36 @@
                                                         <real key="value" value="0.0"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="loguear:" destination="QVC-I2-UA8" eventType="touchUpInside" id="kNA-B7-qeA"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="MHf-UP-w8a" firstAttribute="top" secondItem="Brq-9e-6Nh" secondAttribute="bottom" constant="37" id="JAz-qH-hgy"/>
-                                            <constraint firstItem="MHf-UP-w8a" firstAttribute="leading" secondItem="399-0j-u59" secondAttribute="leading" constant="45" id="YbU-8Z-blY"/>
-                                            <constraint firstItem="Brq-9e-6Nh" firstAttribute="trailing" secondItem="TN2-wv-gMN" secondAttribute="trailing" id="eCP-Fk-qeY"/>
-                                            <constraint firstItem="Brq-9e-6Nh" firstAttribute="leading" secondItem="TN2-wv-gMN" secondAttribute="leading" id="fkd-ND-yo7"/>
-                                            <constraint firstItem="TN2-wv-gMN" firstAttribute="centerX" secondItem="399-0j-u59" secondAttribute="centerX" id="ha3-dg-B5L"/>
-                                            <constraint firstItem="TN2-wv-gMN" firstAttribute="top" secondItem="399-0j-u59" secondAttribute="top" constant="12" id="jS0-xK-Cfe"/>
-                                            <constraint firstAttribute="height" constant="190" id="oML-RY-S6o"/>
-                                            <constraint firstItem="Brq-9e-6Nh" firstAttribute="top" secondItem="TN2-wv-gMN" secondAttribute="bottom" constant="25" id="ot9-3G-0by"/>
-                                            <constraint firstAttribute="trailing" secondItem="TN2-wv-gMN" secondAttribute="trailing" constant="14" id="pAU-IF-VGk"/>
-                                            <constraint firstItem="TN2-wv-gMN" firstAttribute="leading" secondItem="399-0j-u59" secondAttribute="leading" constant="14" id="vvC-wL-Jhp"/>
-                                            <constraint firstAttribute="trailing" secondItem="MHf-UP-w8a" secondAttribute="trailing" constant="45" id="yk3-SI-mdF"/>
+                                            <constraint firstAttribute="width" constant="280" id="24V-9L-UTu"/>
+                                            <constraint firstItem="TN2-wv-gMN" firstAttribute="leading" secondItem="399-0j-u59" secondAttribute="leading" constant="16" id="2lm-ty-eaD"/>
+                                            <constraint firstItem="haf-jJ-x0V" firstAttribute="leading" secondItem="Brq-9e-6Nh" secondAttribute="leading" id="5dK-oB-j9v"/>
+                                            <constraint firstItem="Brq-9e-6Nh" firstAttribute="top" secondItem="TN2-wv-gMN" secondAttribute="bottom" constant="20" id="78S-JO-DfC"/>
+                                            <constraint firstItem="MHf-UP-w8a" firstAttribute="top" secondItem="haf-jJ-x0V" secondAttribute="bottom" constant="42" id="8LZ-ES-QCw"/>
+                                            <constraint firstAttribute="trailing" secondItem="MHf-UP-w8a" secondAttribute="trailing" constant="40" id="97Z-2U-LVX"/>
+                                            <constraint firstItem="MHf-UP-w8a" firstAttribute="leading" secondItem="399-0j-u59" secondAttribute="leading" constant="40" id="9T5-o4-nDl"/>
+                                            <constraint firstAttribute="height" constant="240" id="Geu-n4-DTG"/>
+                                            <constraint firstItem="haf-jJ-x0V" firstAttribute="top" secondItem="Brq-9e-6Nh" secondAttribute="bottom" constant="20" id="IVT-tv-2Cy"/>
+                                            <constraint firstAttribute="bottom" secondItem="MHf-UP-w8a" secondAttribute="bottom" constant="33" id="IpB-OV-9Df"/>
+                                            <constraint firstItem="Brq-9e-6Nh" firstAttribute="top" secondItem="TN2-wv-gMN" secondAttribute="bottom" constant="20" id="LkM-y0-IiV"/>
+                                            <constraint firstItem="Brq-9e-6Nh" firstAttribute="leading" secondItem="TN2-wv-gMN" secondAttribute="leading" id="XSU-MH-wCN"/>
+                                            <constraint firstItem="haf-jJ-x0V" firstAttribute="top" secondItem="Brq-9e-6Nh" secondAttribute="bottom" constant="20" id="Zth-EB-IC0"/>
+                                            <constraint firstItem="MHf-UP-w8a" firstAttribute="top" secondItem="haf-jJ-x0V" secondAttribute="bottom" constant="42" id="kb7-mf-x0Y"/>
+                                            <constraint firstItem="Brq-9e-6Nh" firstAttribute="trailing" secondItem="TN2-wv-gMN" secondAttribute="trailing" id="sca-Ca-GbN"/>
+                                            <constraint firstItem="TN2-wv-gMN" firstAttribute="top" secondItem="399-0j-u59" secondAttribute="top" constant="12" id="tfv-JL-3LT"/>
+                                            <constraint firstAttribute="trailing" secondItem="TN2-wv-gMN" secondAttribute="trailing" constant="16" id="zvz-Mv-Omu"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="399-0j-u59" secondAttribute="trailing" constant="31" id="1vc-ba-4ii"/>
-                                    <constraint firstItem="399-0j-u59" firstAttribute="leading" secondItem="P9f-9M-4Xy" secondAttribute="leading" constant="31" id="8FL-3u-o9Y"/>
-                                    <constraint firstItem="399-0j-u59" firstAttribute="centerY" secondItem="P9f-9M-4Xy" secondAttribute="centerY" id="9Lr-Jm-EJ3"/>
+                                    <constraint firstItem="399-0j-u59" firstAttribute="centerX" secondItem="P9f-9M-4Xy" secondAttribute="centerX" id="fpw-1E-8MI"/>
+                                    <constraint firstItem="399-0j-u59" firstAttribute="centerY" secondItem="P9f-9M-4Xy" secondAttribute="centerY" id="zBq-hu-V0d"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -168,24 +184,29 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wRx-Ow-6D5"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Login" id="8wF-BU-l46"/>
+                    <connections>
+                        <outlet property="lblClave" destination="Brq-9e-6Nh" id="lO2-5t-6c4"/>
+                        <outlet property="lblUsuario" destination="TN2-wv-gMN" id="o9b-eW-VXS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLA-iQ-rzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1952" y="-105"/>
+            <point key="canvasLocation" x="1950.7246376811595" y="-105.80357142857143"/>
         </scene>
-        <!--View Controller-->
+        <!--Registrese-->
         <scene sceneID="apX-Lh-OfC">
             <objects>
-                <viewController id="i8F-rg-rBr" sceneMemberID="viewController">
+                <viewController id="i8F-rg-rBr" customClass="RegisterViewController" customModule="Miriana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OWF-SY-fmP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ReK-D1-eP3">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ms7-zq-f2v">
-                                        <rect key="frame" x="28" y="80" width="264" height="388"/>
+                                        <rect key="frame" x="28" y="58" width="264" height="388"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese su nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Swb-s2-IfT" customClass="CSMTextField" customModule="Miriana" customModuleProvider="target">
                                                 <rect key="frame" x="21" y="15" width="222" height="30"/>
@@ -213,7 +234,7 @@
                                                 <rect key="frame" x="21" y="275" width="222" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="leftMargin">
                                                         <real key="value" value="8"/>
@@ -224,7 +245,7 @@
                                                 <rect key="frame" x="21" y="223" width="222" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="leftMargin">
                                                         <real key="value" value="8"/>
@@ -315,6 +336,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="l8Q-LN-9XY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Registrese" id="6lC-vN-gxl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZI-MT-ZR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -323,9 +345,10 @@
         <!--Navigation Controller-->
         <scene sceneID="QSe-Xo-JEe">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Nxc-RA-lLE" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nxc-RA-lLE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZVY-Gb-Air">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

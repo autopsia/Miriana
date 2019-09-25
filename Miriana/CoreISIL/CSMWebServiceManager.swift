@@ -432,7 +432,7 @@ private class CSMWebServiceBodyRequest {
                     
                     let key = CSMWebServiceManager.shared.request.secureConfiguration.key
                     let iv = CSMWebServiceManager.shared.request.secureConfiguration.initializationVector
-                    let stringParametersEncrypted = stringParameters?.aes256CBCEncrypt(key: key, iv: iv)
+                    _ = stringParameters?.aes256CBCEncrypt(key: key, iv: iv)
                     
                     let dataParametersEncrypted = stringParameters?.data(using: .utf8)
                     return dataParametersEncrypted ?? Data()

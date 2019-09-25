@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B3DE7BAEA4AA6789FB06C413 /* Pods_Miriana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB8C96822D256CEAA0E335F /* Pods_Miriana.framework */; };
-		FB02E3AA23341A2000E31664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB02E3A923341A2000E31664 /* Main.storyboard */; };
-		FB02E3AE23341E9800E31664 /* AllPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02E3AD23341E9800E31664 /* AllPostsViewController.swift */; };
-		FB02E3B023341EAD00E31664 /* FriendPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02E3AF23341EAD00E31664 /* FriendPostsViewController.swift */; };
+		FB2107DB233BC34700130EE2 /* InicioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2107DA233BC34700130EE2 /* InicioController.swift */; };
+		FB2107DD233BC35400130EE2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2107DC233BC35400130EE2 /* LoginViewController.swift */; };
+		FB2107DF233BC36200130EE2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2107DE233BC36200130EE2 /* RegisterViewController.swift */; };
 		FB2C95212332E9AE00D5B993 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB2C95202332E9AE00D5B993 /* GoogleService-Info.plist */; };
 		FB6B0F702332A362005B3292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F6F2332A362005B3292 /* AppDelegate.swift */; };
-		FB6B0F722332A362005B3292 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F712332A362005B3292 /* ViewController.swift */; };
 		FB6B0F752332A362005B3292 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6B0F732332A362005B3292 /* Login.storyboard */; };
 		FB6B0F782332A362005B3292 /* Miriana.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F762332A362005B3292 /* Miriana.xcdatamodeld */; };
 		FB6B0F7A2332A364005B3292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB6B0F792332A364005B3292 /* Assets.xcassets */; };
@@ -51,13 +50,12 @@
 /* Begin PBXFileReference section */
 		4C88468C82493886D5857843 /* Pods-Miriana.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miriana.release.xcconfig"; path = "Target Support Files/Pods-Miriana/Pods-Miriana.release.xcconfig"; sourceTree = "<group>"; };
 		C4319F55CEDD7AB2532EAA5D /* Pods-Miriana.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miriana.debug.xcconfig"; path = "Target Support Files/Pods-Miriana/Pods-Miriana.debug.xcconfig"; sourceTree = "<group>"; };
-		FB02E3A923341A2000E31664 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		FB02E3AD23341E9800E31664 /* AllPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPostsViewController.swift; sourceTree = "<group>"; };
-		FB02E3AF23341EAD00E31664 /* FriendPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPostsViewController.swift; sourceTree = "<group>"; };
+		FB2107DA233BC34700130EE2 /* InicioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioController.swift; sourceTree = "<group>"; };
+		FB2107DC233BC35400130EE2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FB2107DE233BC36200130EE2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FB2C95202332E9AE00D5B993 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FB6B0F6C2332A362005B3292 /* Miriana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miriana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6B0F6F2332A362005B3292 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB6B0F712332A362005B3292 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FB6B0F742332A362005B3292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		FB6B0F772332A362005B3292 /* Miriana.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Miriana.xcdatamodel; sourceTree = "<group>"; };
 		FB6B0F792332A364005B3292 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,23 +121,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FB02E3AB23341A9A00E31664 /* storyboards */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = storyboards;
-			sourceTree = "<group>";
-		};
-		FB02E3AC23341B0100E31664 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				FB02E3A923341A2000E31664 /* Main.storyboard */,
-				FB02E3AD23341E9800E31664 /* AllPostsViewController.swift */,
-				FB02E3AF23341EAD00E31664 /* FriendPostsViewController.swift */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		FB6B0F632332A362005B3292 = {
 			isa = PBXGroup;
 			children = (
@@ -165,8 +146,6 @@
 				FB2C95202332E9AE00D5B993 /* GoogleService-Info.plist */,
 				FB6B0F842332A3BC005B3292 /* CoreISIL */,
 				FB6B0F6F2332A362005B3292 /* AppDelegate.swift */,
-				FB6B0F732332A362005B3292 /* Main.storyboard */,
-				FB6B0F712332A362005B3292 /* ViewController.swift */,
 				FB6B0F792332A364005B3292 /* Assets.xcassets */,
 				FB6B0F7B2332A364005B3292 /* LaunchScreen.storyboard */,
 				FB6B0F7E2332A364005B3292 /* Info.plist */,
@@ -213,8 +192,10 @@
 		FBE6DCFB23343530006D6C5C /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				FB6B0F712332A362005B3292 /* ViewController.swift */,
 				FB6B0F732332A362005B3292 /* Login.storyboard */,
+				FB2107DA233BC34700130EE2 /* InicioController.swift */,
+				FB2107DC233BC35400130EE2 /* LoginViewController.swift */,
+				FB2107DE233BC36200130EE2 /* RegisterViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -282,7 +263,6 @@
 				FB6B0F7D2332A364005B3292 /* LaunchScreen.storyboard in Resources */,
 				FB6B0F7A2332A364005B3292 /* Assets.xcassets in Resources */,
 				FB2C95212332E9AE00D5B993 /* GoogleService-Info.plist in Resources */,
-				FBD5C5182332EEFD00258C4E /* Resources.xcassets in Resources */,
 				FB6B0F752332A362005B3292 /* Login.storyboard in Resources */,
 				FB6B0FAB2332A3BC005B3292 /* .gitkeep in Resources */,
 			);
@@ -347,17 +327,17 @@
 				FB6B0FA72332A3BC005B3292 /* CSMNumber.swift in Sources */,
 				FB6B0FB12332A3BC005B3292 /* CSMButton.swift in Sources */,
 				FB6B0FA62332A3BC005B3292 /* CSMColorManager.swift in Sources */,
-				FB02E3B023341EAD00E31664 /* FriendPostsViewController.swift in Sources */,
-				FB02E3AE23341E9800E31664 /* AllPostsViewController.swift in Sources */,
 				FB6B0FAE2332A3BC005B3292 /* CSMJSON.swift in Sources */,
+				FB2107DF233BC36200130EE2 /* RegisterViewController.swift in Sources */,
 				FB6B0F782332A362005B3292 /* Miriana.xcdatamodeld in Sources */,
 				FB6B0FB42332A3BC005B3292 /* CSMImageDownloaded.swift in Sources */,
 				FB6B0FB82332A3BC005B3292 /* CSMWebServiceManager.swift in Sources */,
-				FB6B0F722332A362005B3292 /* ViewController.swift in Sources */,
+				FB2107DB233BC34700130EE2 /* InicioController.swift in Sources */,
 				FB6B0FB52332A3BC005B3292 /* CSMSwitch.swift in Sources */,
 				FB6B0FB92332A3BC005B3292 /* CSMSlider.swift in Sources */,
 				FB6B0F702332A362005B3292 /* AppDelegate.swift in Sources */,
 				FB6B0FA22332A3BC005B3292 /* CSMLocalAuthentication.swift in Sources */,
+				FB2107DD233BC35400130EE2 /* LoginViewController.swift in Sources */,
 				FB6B0FA42332A3BC005B3292 /* CSMDateManager.swift in Sources */,
 				FB6B0FAC2332A3BC005B3292 /* CSMCustomStarsView.swift in Sources */,
 				FB6B0FAA2332A3BC005B3292 /* CSMSearchBar.swift in Sources */,
