@@ -11,7 +11,8 @@ import FirebaseFirestore
 import FirebaseStorage
 
 class GlobalPostsViewController: UIViewController {
-    
+    var posts: Array<Post> = []
+    var datas: Dictionary<String, Any> = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,12 @@ class GlobalPostsViewController: UIViewController {
                 print("error: \(error)")
             } else {
                 for document in snapshot!.documents {
-                    print(document.data())
+                    self.datas = document.data()
+
+                    var message = self.datas["message"]
+                    print(message)
+                    print("hola")
+                    
                 }
                     
                 
@@ -49,11 +55,12 @@ class GlobalPostsViewController: UIViewController {
 
 
 extension GlobalPostsViewController : UITableViewDelegate, UITableViewDataSource{
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return self.datas.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let identifier = "MainTableView"
@@ -64,6 +71,7 @@ extension GlobalPostsViewController : UITableViewDelegate, UITableViewDataSource
         let b = CGFloat(arc4random()%255) / 255.0
         
         cell.backgroundColor = UIColor(displayP3Red: r, green: g, blue: b, alpha: 1)
+        //cell.post = datas[indexPath.row]
         
         
         return cell

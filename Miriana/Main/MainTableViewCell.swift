@@ -9,10 +9,23 @@
 import UIKit
 
 class MainTableViewCell: UITableViewCell {
+    @IBOutlet weak var txtMessage: UILabel!
+    
 
+    var post: Dictionary<String, Any> = [:]{
+        didSet{
+            self.updateData()
+        }
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    func updateData(){
+        self.txtMessage.text = self.post["message"] as! String
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
