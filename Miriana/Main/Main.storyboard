@@ -81,7 +81,7 @@
         <!--Item 1-->
         <scene sceneID="Jxm-n4-NDB">
             <objects>
-                <viewController id="jl7-Nj-YI2" customClass="AllPostsViewController" customModule="Miriana" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jl7-Nj-YI2" customClass="GlobalPostsViewController" customModule="Miriana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2oj-Ix-k9w">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -252,7 +252,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background_principal" width="317" height="475.5"/>
+        <image name="background_principal" width="316.5" height="476.5"/>
         <image name="ic_three_dots" width="18" height="18"/>
     </resources>
 </document>
