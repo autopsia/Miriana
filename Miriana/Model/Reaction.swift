@@ -9,6 +9,6 @@
 import UIKit
 
 class Reaction: NSObject {
-    var reaction: String = ""
-    var user: String = ""
+    var reaction = ""
+    var user = ""
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 class Comment: NSObject {
-    var dateCreated: Date!
-    var message: String!
-    var user: String!
+    var dateCreated = ""
+    var message = ""
+    var user = ""
 }

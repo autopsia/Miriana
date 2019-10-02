@@ -8,16 +8,15 @@
 
 import UIKit
 
-struct Post {
-    var id: String
-    var author: String
-    var categories: [String]
-    var comments: [Comment]
-    var likes: Array<String>
-    var location: String
-    var message: String
-    var pictures: [String]
-    var reactions: [Reaction]
+class Post: NSObject {
+    var id = ""
+    var author = ""
+    var categories = [String]()
+    var comments = [Comment]()
+    var likes = [String]()
+    var location = ""
+    var message = ""
+    var pictures = [String]()
+    var reactions = [Reaction]()
     
-
 }
