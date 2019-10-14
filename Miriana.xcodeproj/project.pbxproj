@@ -13,6 +13,7 @@
 		FB2107DD233BC35400130EE2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2107DC233BC35400130EE2 /* LoginViewController.swift */; };
 		FB2107DF233BC36200130EE2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2107DE233BC36200130EE2 /* RegisterViewController.swift */; };
 		FB2C95212332E9AE00D5B993 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB2C95202332E9AE00D5B993 /* GoogleService-Info.plist */; };
+		FB3267A12354C7F50012FACF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FB3267A02354C7F50012FACF /* .gitignore */; };
 		FB334D9A233BEC29006998F2 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB334D99233BEC29006998F2 /* AddPostViewController.swift */; };
 		FB68768A2343F95A0036EC36 /* GlobalPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6876892343F95A0036EC36 /* GlobalPostsViewController.swift */; };
 		FB68768B2343F9F40036EC36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB02E3A923341A2000E31664 /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 		FB2107DC233BC35400130EE2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FB2107DE233BC36200130EE2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FB2C95202332E9AE00D5B993 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB3267A02354C7F50012FACF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		FB334D99233BEC29006998F2 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		FB6876892343F95A0036EC36 /* GlobalPostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalPostsViewController.swift; sourceTree = "<group>"; };
 		FB68768D2343FC080036EC36 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		FB6B0F632332A362005B3292 = {
 			isa = PBXGroup;
 			children = (
+				FB3267A02354C7F50012FACF /* .gitignore */,
 				FB6B0F6E2332A362005B3292 /* Miriana */,
 				FB6B0F6D2332A362005B3292 /* Products */,
 				476EDF545A30883FF8CA41A5 /* Pods */,
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB6B0F7D2332A364005B3292 /* LaunchScreen.storyboard in Resources */,
+				FB3267A12354C7F50012FACF /* .gitignore in Resources */,
 				FB6B0F7A2332A364005B3292 /* Assets.xcassets in Resources */,
 				FB2C95212332E9AE00D5B993 /* GoogleService-Info.plist in Resources */,
 				FB68768B2343F9F40036EC36 /* Main.storyboard in Resources */,
