@@ -51,7 +51,7 @@ class RegisterViewController: UIViewController {
     
     func uploadImage(uId: String, user: User){
         guard let data = ivPhoto.image?.jpegData(compressionQuality: 0.75) else { return }
-        let userRef = Storage.storage().reference().child(uId)
+        let userRef = Storage.storage().reference().child(uId).child("avatar")
         let metadata = StorageMetadata()
         metadata.contentType = "image/jpeg"
         
@@ -83,7 +83,7 @@ class RegisterViewController: UIViewController {
             if err != nil {
                 self.lblMessage.text = "Error al registrarse"
             } else {
-                self.dismiss(animated: true)
+                self.dismiss(animated: true, completion: nil)
             }
         }
     }
@@ -95,6 +95,6 @@ extension RegisterViewController : UIImagePickerControllerDelegate, UINavigation
             ivPhoto.image = image
         }
         
-        dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
 }
