@@ -1,42 +1,34 @@
-//
-//  LoginViewController.swift
-//  Miriana
-//
-//  Created by Alumno on 9/25/19.
-//  Copyright © 2019 Sector Defectuoso. All rights reserved.
-//
-
 import UIKit
-import FirebaseFirestore
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
-    @IBOutlet weak var lblUsuario: CSMTextField!
-    @IBOutlet weak var lblClave: CSMTextField!
-    var db: Firestore!
+    
+    
+    @IBOutlet weak var txtEmail: CSMTextField!
+    @IBOutlet weak var txtPassword: CSMTextField!
+    @IBOutlet weak var lblMessage: CSMLabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        db = Firestore.firestore()
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func loguear(_ sender: CSMButton) {
-        let user: String? = self.lblUsuario.text
-        let pass: String? = self.lblClave.text
+    @IBAction func btnLogIn(_ sender: Any) {
+        guard let email = self.txtEmail.text?.trim() else { return }
+        guard let password = self.txtPassword.text?.trim() else { return }
         
-        db.collection("users").whereField("username", isEqualTo: user as Any).whereField("password", isEqualTo: pass as Any)
-            .getDocuments() { (querySnapshot, err) in
-                if let err = err {
-                    print("Error getting documents: \(err)")
-                } else {
-                    for document in querySnapshot!.documents {
-                        
-                    }
-                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "UITabBarController") as! UITabBarController
-                    self.present(newViewController, animated: true, completion: nil)
-                }
-        }
+        logIn(email: email, password: password)
     }
     
+    func logIn(email: String, password: String){
+        Auth.auth().signIn(withEmail: email, password: password) { (user, err) in
+            if user != nil {
+                let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let viewController = storyboard.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController
+                self.show(viewController, sender: self)
+            }
+            else {
+                self.lblMessage.text = "Email y/o contraseña incorrecta"
+            }
+        }
+    }
 }

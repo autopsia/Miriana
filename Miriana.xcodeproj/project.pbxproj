@@ -15,6 +15,8 @@
 		FB2C95212332E9AE00D5B993 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB2C95202332E9AE00D5B993 /* GoogleService-Info.plist */; };
 		FB3267A12354C7F50012FACF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FB3267A02354C7F50012FACF /* .gitignore */; };
 		FB334D9A233BEC29006998F2 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB334D99233BEC29006998F2 /* AddPostViewController.swift */; };
+		FB3D81712354DF3E00DC7F31 /* RecoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D81702354DF3E00DC7F31 /* RecoverViewController.swift */; };
+		FB3D81732354F54A00DC7F31 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D81722354F54A00DC7F31 /* User.swift */; };
 		FB68768A2343F95A0036EC36 /* GlobalPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6876892343F95A0036EC36 /* GlobalPostsViewController.swift */; };
 		FB68768B2343F9F40036EC36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB02E3A923341A2000E31664 /* Main.storyboard */; };
 		FB68768E2343FC080036EC36 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB68768D2343FC080036EC36 /* Post.swift */; };
@@ -67,6 +69,8 @@
 		FB2C95202332E9AE00D5B993 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FB3267A02354C7F50012FACF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		FB334D99233BEC29006998F2 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		FB3D81702354DF3E00DC7F31 /* RecoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverViewController.swift; sourceTree = "<group>"; };
+		FB3D81722354F54A00DC7F31 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FB6876892343F95A0036EC36 /* GlobalPostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalPostsViewController.swift; sourceTree = "<group>"; };
 		FB68768D2343FC080036EC36 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		FB68768F2343FE7A0036EC36 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 				FB68768D2343FC080036EC36 /* Post.swift */,
 				FB68768F2343FE7A0036EC36 /* Comment.swift */,
 				FB687691234400300036EC36 /* Reaction.swift */,
+				FB3D81722354F54A00DC7F31 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 				FB2107DA233BC34700130EE2 /* InicioController.swift */,
 				FB2107DC233BC35400130EE2 /* LoginViewController.swift */,
 				FB2107DE233BC36200130EE2 /* RegisterViewController.swift */,
+				FB3D81702354DF3E00DC7F31 /* RecoverViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -378,6 +384,7 @@
 				FB6B0F782332A362005B3292 /* Miriana.xcdatamodeld in Sources */,
 				FB6B0FB42332A3BC005B3292 /* CSMImageDownloaded.swift in Sources */,
 				FB68768E2343FC080036EC36 /* Post.swift in Sources */,
+				FB3D81712354DF3E00DC7F31 /* RecoverViewController.swift in Sources */,
 				FB6B0FB82332A3BC005B3292 /* CSMWebServiceManager.swift in Sources */,
 				FB2107DB233BC34700130EE2 /* InicioController.swift in Sources */,
 				FB6B0FB52332A3BC005B3292 /* CSMSwitch.swift in Sources */,
@@ -388,6 +395,7 @@
 				FB2107DD233BC35400130EE2 /* LoginViewController.swift in Sources */,
 				FB6B0FA42332A3BC005B3292 /* CSMDateManager.swift in Sources */,
 				FB02E3B22334388800E31664 /* MainTableViewCell.swift in Sources */,
+				FB3D81732354F54A00DC7F31 /* User.swift in Sources */,
 				FB6B0FAC2332A3BC005B3292 /* CSMCustomStarsView.swift in Sources */,
 				FB6B0FAA2332A3BC005B3292 /* CSMSearchBar.swift in Sources */,
 				FB6B0FB02332A3BC005B3292 /* CSMTextField.swift in Sources */,
