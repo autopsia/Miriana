@@ -24,7 +24,8 @@ class LoginViewController: UIViewController {
             if user != nil {
                 let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                 let viewController = storyboard.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController
-                self.show(viewController, sender: self)
+                self.view.window?.rootViewController = viewController
+                self.view.window?.makeKeyAndVisible()
             }
             else {
                 self.lblMessage.text = "Email y/o contraseña incorrecta"

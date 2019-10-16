@@ -1,6 +1,6 @@
 import UIKit
 
-class User: NSObject {
+class User: Codable {
     var firstName: String = ""
     var lastName: String  = ""
     var email: String = ""

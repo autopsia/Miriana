@@ -60,7 +60,7 @@ extension GlobalPostsViewController : UITableViewDelegate, UITableViewDataSource
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.posts.count
+        return 12
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let identifier = "MainTableView"

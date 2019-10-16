@@ -14,6 +14,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var ivPhoto: CSMImageView!
     
     var picker = UIImagePickerController()
+    var objUser = User()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,23 +34,22 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func btnSignIn(_ sender: Any) {
-        let objUser = User()
         objUser.firstName = txtFirstName.text?.trim() ?? ""
         objUser.lastName = txtLastName.text?.trim() ?? ""
         objUser.nick = txtNick.text?.trim() ?? ""
         objUser.email = txtEmail.text?.trim() ?? ""
         objUser.password = txtPassword.text?.trim() ?? ""
-        signIn(user: objUser)
+        signIn()
     }
     
-    func signIn(user: User){
-        Auth.auth().createUser(withEmail: user.email, password: user.password) { (result, err) in
+    func signIn(){
+        Auth.auth().createUser(withEmail: objUser.email, password: objUser.password) { (result, err) in
             guard let uId = Auth.auth().currentUser?.uid else { return }
-            self.uploadImage(uId: uId, user: user)
+            self.uploadImage(uId: uId)
         }
     }
     
-    func uploadImage(uId: String, user: User){
+    func uploadImage(uId: String){
         guard let data = ivPhoto.image?.jpegData(compressionQuality: 0.75) else { return }
         let userRef = Storage.storage().reference().child(uId).child("avatar")
         let metadata = StorageMetadata()
@@ -64,26 +64,29 @@ class RegisterViewController: UIViewController {
                 guard url != nil else {
                     return
                 }
-                user.urlImage = url?.absoluteString ?? ""
-                self.sigInFireStore(uId: uId, user: user)
+                self.objUser.urlImage = url!.absoluteString
+                self.sigInFireStore(uId: uId)
             }
         }
     }
     
-    func sigInFireStore(uId:String, user: User){
+    func sigInFireStore(uId:String){
         let data = [
-            "firstName": user.firstName,
-            "lastName": user.lastName,
-            "email": user.email,
-            "nick": user.nick,
-            "password": user.password,
-            "urlImage": user.urlImage
+            "firstName": objUser.firstName,
+            "lastName": objUser.lastName,
+            "email": objUser.email,
+            "nick": objUser.nick,
+            "password": objUser.password,
+            "urlImage": objUser.urlImage
         ]
         Firestore.firestore().collection("users").document(uId).setData(data) { err in
             if err != nil {
                 self.lblMessage.text = "Error al registrarse"
             } else {
-                self.dismiss(animated: true, completion: nil)
+                let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let viewController = storyboard.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController
+                self.view.window?.rootViewController = viewController
+                self.view.window?.makeKeyAndVisible()
             }
         }
     }

@@ -55,6 +55,8 @@
 		FB6B0FBA2332A3BC005B3292 /* CSMImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F9E2332A3BC005B3292 /* CSMImageView.swift */; };
 		FB6B0FBB2332A3BC005B3292 /* CSMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0F9F2332A3BC005B3292 /* CSMView.swift */; };
 		FB6B0FBC2332A3BC005B3292 /* CSMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B0FA02332A3BC005B3292 /* CSMString.swift */; };
+		FB73318123573DF9003DCD90 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB73318023573DF9003DCD90 /* AccountViewController.swift */; };
+		FB7331832357608F003DCD90 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7331822357608F003DCD90 /* Function.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +112,8 @@
 		FB6B0F9E2332A3BC005B3292 /* CSMImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMImageView.swift; sourceTree = "<group>"; };
 		FB6B0F9F2332A3BC005B3292 /* CSMView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMView.swift; sourceTree = "<group>"; };
 		FB6B0FA02332A3BC005B3292 /* CSMString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMString.swift; sourceTree = "<group>"; };
+		FB73318023573DF9003DCD90 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		FB7331822357608F003DCD90 /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
 		FCB8C96822D256CEAA0E335F /* Pods_Miriana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Miriana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -150,6 +154,7 @@
 				FB02E3AF23341EAD00E31664 /* FriendPostsViewController.swift */,
 				FB02E3B12334388800E31664 /* MainTableViewCell.swift */,
 				FB334D99233BEC29006998F2 /* AddPostViewController.swift */,
+				FB73318023573DF9003DCD90 /* AccountViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 				FB6B0F7B2332A364005B3292 /* LaunchScreen.storyboard */,
 				FB6B0F7E2332A364005B3292 /* Info.plist */,
 				FB6B0F762332A362005B3292 /* Miriana.xcdatamodeld */,
+				FB7331822357608F003DCD90 /* Function.swift */,
 			);
 			path = Miriana;
 			sourceTree = "<group>";
@@ -376,6 +382,7 @@
 				FB687692234400300036EC36 /* Reaction.swift in Sources */,
 				FB6B0FB22332A3BC005B3292 /* CSMTableView.swift in Sources */,
 				FB6B0FB32332A3BC005B3292 /* CSMCustomCollectionViewVerticalLayout.swift in Sources */,
+				FB7331832357608F003DCD90 /* Function.swift in Sources */,
 				FB6B0FA72332A3BC005B3292 /* CSMNumber.swift in Sources */,
 				FB6B0FB12332A3BC005B3292 /* CSMButton.swift in Sources */,
 				FB6B0FA62332A3BC005B3292 /* CSMColorManager.swift in Sources */,
@@ -404,6 +411,7 @@
 				FB6B0FA52332A3BC005B3292 /* CSMCrypto.swift in Sources */,
 				FB6B0FB72332A3BC005B3292 /* CSMUserAlters.swift in Sources */,
 				FB6B0FBA2332A3BC005B3292 /* CSMImageView.swift in Sources */,
+				FB73318123573DF9003DCD90 /* AccountViewController.swift in Sources */,
 				FB6B0FBC2332A3BC005B3292 /* CSMString.swift in Sources */,
 				FB6B0FA12332A3BC005B3292 /* CSMTextView.swift in Sources */,
 				FB68768A2343F95A0036EC36 /* GlobalPostsViewController.swift in Sources */,
