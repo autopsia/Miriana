@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B3DE7BAEA4AA6789FB06C413 /* Pods_Miriana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB8C96822D256CEAA0E335F /* Pods_Miriana.framework */; };
 		FB02E3B22334388800E31664 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02E3B12334388800E31664 /* MainTableViewCell.swift */; };
+		FB11D24D2360927C00574D89 /* EditAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB11D24C2360927C00574D89 /* EditAccountViewController.swift */; };
 		FB2107DB233BC34700130EE2 /* InicioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2107DA233BC34700130EE2 /* InicioController.swift */; };
 		FB2107DD233BC35400130EE2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2107DC233BC35400130EE2 /* LoginViewController.swift */; };
 		FB2107DF233BC36200130EE2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2107DE233BC36200130EE2 /* RegisterViewController.swift */; };
@@ -65,6 +66,7 @@
 		FB02E3A923341A2000E31664 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FB02E3AF23341EAD00E31664 /* FriendPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPostsViewController.swift; sourceTree = "<group>"; };
 		FB02E3B12334388800E31664 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		FB11D24C2360927C00574D89 /* EditAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountViewController.swift; sourceTree = "<group>"; };
 		FB2107DA233BC34700130EE2 /* InicioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioController.swift; sourceTree = "<group>"; };
 		FB2107DC233BC35400130EE2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FB2107DE233BC36200130EE2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				FB02E3B12334388800E31664 /* MainTableViewCell.swift */,
 				FB334D99233BEC29006998F2 /* AddPostViewController.swift */,
 				FB73318023573DF9003DCD90 /* AccountViewController.swift */,
+				FB11D24C2360927C00574D89 /* EditAccountViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				FB6B0FB32332A3BC005B3292 /* CSMCustomCollectionViewVerticalLayout.swift in Sources */,
 				FB7331832357608F003DCD90 /* Function.swift in Sources */,
 				FB6B0FA72332A3BC005B3292 /* CSMNumber.swift in Sources */,
+				FB11D24D2360927C00574D89 /* EditAccountViewController.swift in Sources */,
 				FB6B0FB12332A3BC005B3292 /* CSMButton.swift in Sources */,
 				FB6B0FA62332A3BC005B3292 /* CSMColorManager.swift in Sources */,
 				FB6B0FAE2332A3BC005B3292 /* CSMJSON.swift in Sources */,

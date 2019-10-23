@@ -80,6 +80,9 @@
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="zfG-9f-cNo">
                         <barButtonItem key="backBarButtonItem" title="Atras" id="cHr-gY-yrE"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="L58-C9-6yK" kind="show" identifier="TabBarController" id="Sra-wD-VCy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -180,9 +183,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="8wF-BU-l46"/>
                     <connections>
+                        <outlet property="buttonLogin" destination="et8-fE-2bH" id="LDI-mr-vsS"/>
                         <outlet property="lblMessage" destination="8WO-ZB-PGh" id="AM3-1q-bac"/>
                         <outlet property="txtEmail" destination="BgW-YH-v7P" id="kNf-eZ-Mn9"/>
                         <outlet property="txtPassword" destination="9rr-sk-csV" id="FBU-Vq-gUY"/>
+                        <segue destination="Q6T-zw-iUo" kind="show" identifier="TabBarController" id="gzO-id-7hl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLA-iQ-rzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -261,10 +266,10 @@
             </objects>
             <point key="canvasLocation" x="2737.5" y="-106.69014084507042"/>
         </scene>
-        <!--Main-->
+        <!--TabBarController-->
         <scene sceneID="BFy-cf-bYJ">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="MainViewRef" storyboardName="Main" id="Q6T-zw-iUo" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="MainViewRef" storyboardName="Main" referencedIdentifier="TabBarController" id="Q6T-zw-iUo" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEv-Vt-If9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2520" y="345"/>
@@ -363,12 +368,23 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xiS-zE-9hZ">
                                                         <rect key="frame" x="0.0" y="327" width="288" height="200"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-default" translatesAutoresizingMaskIntoConstraints="NO" id="xNt-Xh-lsA" customClass="CSMImageView" customModule="Miriana" customModuleProvider="target">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-default" translatesAutoresizingMaskIntoConstraints="NO" id="xNt-Xh-lsA" customClass="CSMImageView" customModule="Miriana" customModuleProvider="target">
                                                                 <rect key="frame" x="44" y="0.0" width="200" height="200"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="200" id="3qL-Aq-D0E"/>
                                                                     <constraint firstAttribute="height" constant="200" id="csM-TF-7I4"/>
                                                                 </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="15"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                             </imageView>
                                                         </subviews>
                                                     </stackView>
@@ -436,6 +452,7 @@
                     <navigationItem key="navigationItem" title="Registrese" id="6lC-vN-gxl"/>
                     <size key="freeformSize" width="320" height="760"/>
                     <connections>
+                        <outlet property="buttonSignIn" destination="FH3-m7-WOT" id="aoY-wI-e33"/>
                         <outlet property="ivPhoto" destination="xNt-Xh-lsA" id="tTA-7t-0V6"/>
                         <outlet property="lblMessage" destination="hHy-uC-f6f" id="VE3-9H-lIr"/>
                         <outlet property="txtEmail" destination="axc-en-M6h" id="CgK-Bd-77r"/>
@@ -444,11 +461,20 @@
                         <outlet property="txtNick" destination="1Ae-85-oQu" id="4ev-fX-QYZ"/>
                         <outlet property="txtPassword" destination="2ZO-42-Oy9" id="K3g-sD-DP7"/>
                         <outlet property="txtRePassword" destination="9nk-tM-Dwa" id="07z-RV-Gda"/>
+                        <segue destination="Kam-fA-JCf" kind="show" identifier="TabBarController" id="Pcv-mp-Jgx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZI-MT-ZR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1950" y="768"/>
+        </scene>
+        <!--TabBarController-->
+        <scene sceneID="DxP-Sj-Vl4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="TabBarController" id="Kam-fA-JCf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4O5-n7-LKb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1950" y="1314"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QSe-Xo-JEe">
@@ -470,6 +496,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2E-7j-12B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.25" y="129.92957746478874"/>
+        </scene>
+        <!--TabBarController-->
+        <scene sceneID="n9u-WL-MvX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="TabBarController" id="L58-C9-6yK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PCD-az-pIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1129" y="581"/>
         </scene>
     </scenes>
     <resources>

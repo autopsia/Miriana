@@ -5,6 +5,7 @@ import FirebaseAuth
 class AccountViewController: UIViewController {
     let db = Firestore.firestore()
     let firebaseAuth = Auth.auth()
+    var urlImage = ""
     
     @IBOutlet weak var ivPhoto: CSMImageView!
     @IBOutlet weak var lblNick: CSMLabel!
@@ -24,17 +25,14 @@ class AccountViewController: UIViewController {
         present(picker, animated: true, completion: nil)
     }
     
-    @IBAction func btnEditAccount(_ sender: Any) {
-        
-    }
-    
     @IBAction func btnLogOut(_ sender: Any) {
         do {
             try firebaseAuth.signOut()
-            let storyboard: UIStoryboard = UIStoryboard(name: "Login", bundle: nil)
-            let viewController = storyboard.instantiateViewController(withIdentifier: "LoginView") as! LoginViewController
-            view.window?.rootViewController = viewController
-            view.window?.makeKeyAndVisible()
+            self.navigationController?.popToRootViewController(animated: true)
+//            let storyboard: UIStoryboard = UIStoryboard(name: "Login", bundle: nil)
+//            let viewController = storyboard.instantiateViewController(withIdentifier: "LoginView") as! LoginViewController
+//            view.window?.rootViewController = viewController
+//            view.window?.makeKeyAndVisible()
         }
         catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
@@ -78,8 +76,36 @@ extension AccountViewController : UIImagePickerControllerDelegate, UINavigationC
     internal func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
             ivPhoto.image = image
+            uploadImage(uId: firebaseAuth.currentUser?.uid ?? "")
         }
         
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    func uploadImage(uId: String){
+        guard let data = ivPhoto.image?.jpegData(compressionQuality: 0.75) else { return }
+        let userRef = Storage.storage().reference().child(uId).child("avatar")
+        let metadata = StorageMetadata()
+        metadata.contentType = "image/jpeg"
+        
+        _ = userRef.putData(data, metadata: metadata) { (metadata, error) in
+            guard metadata != nil else {
+                return
+            }
+            
+            userRef.downloadURL { (url, error) in
+                guard url != nil else {
+                    return
+                }
+                self.urlImage = url!.absoluteString
+                self.updateData(uId: uId)
+            }
+        }
+    }
+    
+    func updateData(uId:String){
+        let data = [
+            "urlImage": self.urlImage
+        ]
     }
 }

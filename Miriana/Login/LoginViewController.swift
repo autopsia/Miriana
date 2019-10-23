@@ -7,6 +7,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var txtEmail: CSMTextField!
     @IBOutlet weak var txtPassword: CSMTextField!
     @IBOutlet weak var lblMessage: CSMLabel!
+    @IBOutlet weak var buttonLogin: CSMButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,16 +21,16 @@ class LoginViewController: UIViewController {
     }
     
     func logIn(email: String, password: String){
+        buttonLogin.isUserInteractionEnabled = false
+        buttonLogin.isEnabled = false
         Auth.auth().signIn(withEmail: email, password: password) { (user, err) in
             if user != nil {
-                let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                let viewController = storyboard.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController
-                self.view.window?.rootViewController = viewController
-                self.view.window?.makeKeyAndVisible()
+                self.performSegue(withIdentifier: "TabBarController", sender: nil)
             }
             else {
                 self.lblMessage.text = "Email y/o contraseña incorrecta"
             }
+            self.buttonLogin.isEnabled = true
         }
     }
 }

@@ -12,6 +12,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var txtRePassword: CSMTextField!
     @IBOutlet weak var lblMessage: CSMLabel!
     @IBOutlet weak var ivPhoto: CSMImageView!
+    @IBOutlet weak var buttonSignIn: CSMButton!
     
     var picker = UIImagePickerController()
     var objUser = User()
@@ -22,6 +23,7 @@ class RegisterViewController: UIViewController {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(openGallery(tapGestureRecognizer:)))
         ivPhoto.isUserInteractionEnabled = true
         ivPhoto.addGestureRecognizer(tapGestureRecognizer)
+        ivPhoto.clipsToBounds = true
         
         picker.delegate = self
     }
@@ -34,6 +36,7 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func btnSignIn(_ sender: Any) {
+        buttonSignIn.isEnabled = false
         objUser.firstName = txtFirstName.text?.trim() ?? ""
         objUser.lastName = txtLastName.text?.trim() ?? ""
         objUser.nick = txtNick.text?.trim() ?? ""
@@ -83,10 +86,7 @@ class RegisterViewController: UIViewController {
             if err != nil {
                 self.lblMessage.text = "Error al registrarse"
             } else {
-                let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                let viewController = storyboard.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController
-                self.view.window?.rootViewController = viewController
-                self.view.window?.makeKeyAndVisible()
+                self.performSegue(withIdentifier: "TabBarController", sender: nil)
             }
         }
     }
@@ -94,7 +94,7 @@ class RegisterViewController: UIViewController {
 
 extension RegisterViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     internal func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+        if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage{
             ivPhoto.image = image
         }
         

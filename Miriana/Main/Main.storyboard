@@ -350,7 +350,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="btnEditAccount:" destination="vU1-2L-TkT" eventType="touchUpInside" id="ZT1-VU-69f"/>
+                                                                    <segue destination="y8y-wr-3XH" kind="show" id="MAy-6v-djL"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzn-Mf-N0h" customClass="CSMButton" customModule="Miriana" customModuleProvider="target">
@@ -411,6 +411,147 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cnT-YS-Hct" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-525" y="-672"/>
+        </scene>
+        <!--Edit Account View Controller-->
+        <scene sceneID="LJb-0c-v1B">
+            <objects>
+                <viewController id="y8y-wr-3XH" customClass="EditAccountViewController" customModule="Miriana" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2pA-EZ-dZn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tff-F8-icC">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x8u-fM-r3T">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="392"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="2fO-By-7wz">
+                                                <rect key="frame" x="16" y="32" width="382" height="360"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uve-vV-uPm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="200"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JmE-lu-vlg" customClass="CSMTextField" customModule="Miriana" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="35"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="35" id="LWg-d1-mEx"/>
+                                                                </constraints>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" textContentType="given-name"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftMargin">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sGT-qp-fnT" customClass="CSMTextField" customModule="Miriana" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="55" width="382" height="35"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" textContentType="family-name"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftMargin">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RQ9-aP-IcM" customClass="CSMTextField" customModule="Miriana" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="110" width="382" height="35"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftMargin">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nick" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l67-7p-cGU" customClass="CSMTextField" customModule="Miriana" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="165" width="382" height="35"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" textContentType="nickname"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftMargin">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LCQ-OT-fmw">
+                                                        <rect key="frame" x="0.0" y="235" width="382" height="125"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwT-Rn-kT3" customClass="CSMButton" customModule="Miriana" customModuleProvider="target">
+                                                                <rect key="frame" x="71" y="0.0" width="240" height="40"/>
+                                                                <color key="backgroundColor" red="0.062531441640000004" green="0.41489900330000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="240" id="n3B-oG-STA"/>
+                                                                    <constraint firstAttribute="height" constant="40" id="uRA-bJ-SDu"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Actualizar">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="15"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="btnActualizar:" destination="y8y-wr-3XH" eventType="touchUpInside" id="r8C-jY-VEw"/>
+                                                                </connections>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZG-t6-EHv" customClass="CSMLabel" customModule="Miriana" customModuleProvider="target">
+                                                                <rect key="frame" x="166" y="40" width="50" height="85"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                                <color key="textColor" red="1" green="0.2310171261" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="2fO-By-7wz" firstAttribute="leading" secondItem="x8u-fM-r3T" secondAttribute="leading" constant="16" id="Fic-fJ-ba0"/>
+                                            <constraint firstAttribute="bottom" secondItem="2fO-By-7wz" secondAttribute="bottom" id="Ga7-ge-qiA"/>
+                                            <constraint firstAttribute="trailing" secondItem="2fO-By-7wz" secondAttribute="trailing" constant="16" id="pFT-hk-e9Y"/>
+                                            <constraint firstItem="2fO-By-7wz" firstAttribute="top" secondItem="x8u-fM-r3T" secondAttribute="top" constant="32" id="u87-f0-MPd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="x8u-fM-r3T" firstAttribute="leading" secondItem="tff-F8-icC" secondAttribute="leading" id="HC1-k2-q49"/>
+                                    <constraint firstAttribute="trailing" secondItem="x8u-fM-r3T" secondAttribute="trailing" id="QKr-zp-cVc"/>
+                                    <constraint firstItem="x8u-fM-r3T" firstAttribute="height" secondItem="tff-F8-icC" secondAttribute="height" priority="250" id="bed-Db-R5y"/>
+                                    <constraint firstAttribute="bottom" secondItem="x8u-fM-r3T" secondAttribute="bottom" id="iG3-aq-oKw"/>
+                                    <constraint firstItem="x8u-fM-r3T" firstAttribute="width" secondItem="tff-F8-icC" secondAttribute="width" id="rT0-xJ-zEV"/>
+                                    <constraint firstItem="x8u-fM-r3T" firstAttribute="top" secondItem="tff-F8-icC" secondAttribute="top" id="zri-dq-luS"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tff-F8-icC" firstAttribute="bottom" secondItem="8jH-uA-NK5" secondAttribute="bottom" id="I3W-2y-OwU"/>
+                            <constraint firstItem="tff-F8-icC" firstAttribute="leading" secondItem="8jH-uA-NK5" secondAttribute="leading" id="NXK-Bi-CQ8"/>
+                            <constraint firstItem="tff-F8-icC" firstAttribute="top" secondItem="8jH-uA-NK5" secondAttribute="top" id="OXI-Ve-gb2"/>
+                            <constraint firstItem="tff-F8-icC" firstAttribute="trailing" secondItem="8jH-uA-NK5" secondAttribute="trailing" id="VYb-R3-Ygv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8jH-uA-NK5"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtEmail" destination="RQ9-aP-IcM" id="zQf-Ko-co7"/>
+                        <outlet property="txtFirstName" destination="JmE-lu-vlg" id="47p-q8-P89"/>
+                        <outlet property="txtLastName" destination="sGT-qp-fnT" id="YkP-oo-Sjy"/>
+                        <outlet property="txtNick" destination="l67-7p-cGU" id="EAP-qE-suS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oA9-DK-sVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="348" y="-672"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PTg-5Y-6eG">
